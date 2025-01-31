@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Nora Zajzon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    // JavaScript can be added here
+    class HelloWorld extends HTMLElement {
+        connectedCallback() {
+            this.innerHTML = "Made with ❤️ by Nora Zajzon";
+            this.style.textAlign = "center";
+            this.style.padding = "1em";
+            this.style.marginTop = "2em";
+        }
+    }
+    customElements.define('hello-world', HelloWorld);
+</script>
 <body>
     <header>
         <nav>
@@ -39,28 +52,12 @@
                         Using a commercial EEG headset (CGX Systems) and custom in-ear EEG sensors developed in the Integrated Systems Neuroengineering Laboratory, we collected and analyzed brain activity in response to auditory stimuli. The research sought to establish a foundation for future in-ear EEG sensor development, potentially leading to non-invasive neurofeedback applications.</p>
                 </details>
             </article>
-
-            <article>
-                <h2>Publications</h2>
-                <table>
-                    <caption>Published Works</caption>
-                    <colgroup>
-                        <col span="2">
-                    </colgroup>
-                    <tr>
-                        <th>Year</th>
-                        <th>Title</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><em>Publications forthcoming</em></td>
-                    </tr>
-                </table>
-            </article>
         </section>
     </main>
 
+    <page-section-divider></page-section-divider>
     <footer>
-        <p>Copyright © 2024</p>
+        <p>Made with ❤️ by Nora Zajzon</p>
     </footer>
 </body>
 </html> 

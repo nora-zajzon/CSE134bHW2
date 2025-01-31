@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Nora Zajzon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    // JavaScript can be added here
+    class HelloWorld extends HTMLElement {
+        connectedCallback() {
+            this.innerHTML = "Made with ❤️ by Nora Zajzon";
+            this.style.textAlign = "center";
+            this.style.padding = "1em";
+            this.style.marginTop = "2em";
+        }
+    }
+    customElements.define('hello-world', HelloWorld);
+</script>
 <body>
     <header>
         <nav>
@@ -14,6 +27,7 @@
                 <li><a href="research.html">Research</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiemental.html">Experimental</a></li>
             </ul>
         </nav>
     </header>
@@ -59,9 +73,9 @@
         </section>
     </main>
 
+    <page-section-divider></page-section-divider>
     <footer>
-        <address>Contact Information</address>
-        <p>Copyright © 2024</p>
+        <p>Made with ❤️ by Nora Zajzon</p>
     </footer>
 </body>
 </html> 

@@ -7,12 +7,16 @@
     <meta name="author" content="Your Name">
     <title>Nora Zajzon - Personal Website</title>
     <style>
-        /* Internal CSS can be added here */
     </style>
     <script>
-        // JavaScript can be added here
+        // JavaScript will be added here to make dialogs work
     </script>
     <noscript>Your browser does not support JavaScript!</noscript>
+    <meta property="og:title" content="My Web Portfolio">
+    <meta property="og:description" content="A showcase of my web development work">
+    <meta property="og:image" content="path/to/image.jpg">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -27,6 +31,7 @@
                 <li><a href="research.html">Research</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiemental.html">Experimental</a></li>
             </ul>
         </nav>
     </header>
@@ -51,8 +56,23 @@
                         <source media="(min-width: 200px)" height="150" srcset="NoraImg.jpg">
                         <img src="NoraImg.jpg" alt="Featured Image">
                     </picture>
-                    <figcaption>nzajzon [at] ucsd [dot] edu</figcaption>
+                    <figcaption><span class="email">nzajzon</span> [at] <span class="domain">ucsd</span> [dot] <span class="ext">edu</span></figcaption>
                 </figure>
+                <address>
+                    Contact Information:<br>
+                    <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6" target="_blank">
+                        <img src="LinkedIn_icon.svg.png" alt="LinkedIn" width="30" height="30">
+                    </a>
+                    <a href="https://github.com/nora-zajzon" target="_blank">
+                        <img src="GitHub-Mark-ea2971cee799.png" alt="Github" width="30" height="30">
+                    </a>
+                    <a href="mailto:nzajzon@ucsd.edu">
+                        <svg width="30" height="30" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8l-8,5L4,8V6l8,5l8-5V8z"/>
+                        </svg>
+                    </a>
+                    <br>
+                </address>
             </div>
         </section>
 
@@ -64,16 +84,22 @@
         </aside>
     </main>
 
+    <!-- Add a button to open the dialog -->
+    <button id="contact-btn" onclick="myDialog.showModal()">See Contact Information</button>
+
+    <dialog id="myDialog">
+        <h2>Contact Information</h2>
+        <p>Email: nzajzon@ucsd.edu</p>
+        <p>Github: <a href="https://github.com/nora-zajzon">https://github.com/nora-zajzon</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6">https://linkedin.com/in/nora-zajzon-9bb6021b6</a></p>
+        
+        <form method="dialog">
+            <button value="close">Close</button>
+        </form>
+    </dialog>
+    <page-section-divider></page-section-divider>
     <footer>
-        <address>
-            Contact Information:<br>
-            <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6" target="_blank">
-                <img src="LinkedIn_icon.svg.png" alt="LinkedIn" width="30" height="30">
-            </a><a href="https://github.com/nora-zajzon" target="_blank">
-                <img src="GitHub-Mark-ea2971cee799.png" alt="Github" width="30" height="30">
-            </a><br>
-        </address>
-        <p>Copyright © <span id="year">2024</span></p>
+        <p>Made with ❤️ by Nora Zajzon</p>
     </footer>
 </body>
 </html>

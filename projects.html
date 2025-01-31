@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Nora Zajzon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = "Made with ❤️ by Nora Zajzon";
+                this.style.textAlign = "center";
+                this.style.padding = "1em";
+                this.style.marginTop = "2em";
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
 </head>
 <body>
     <header>
@@ -14,6 +26,7 @@
                 <li><a href="research.html">Research</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiemental.html">Experimental</a></li>
             </ul>
         </nav>
     </header>
@@ -27,11 +40,6 @@
                 <p>As a Software Engineering Intern at StoryIt, I worked on developing an influencer marketing platform designed to streamline collaboration between businesses and content creators. This web application helps companies create, manage, and track marketing content deals efficiently, offering an end-to-end solution for influencer partnerships.
 
                     My contributions involved both front-end and back-end development, where I worked with React for UI development and Flutter for manual verification workflows. I also played a crucial role in data management using Firestore, implementing efficient queries and API interactions to optimize data retrieval.</p>
-                <div class="project-demo">
-                    <canvas id="projectDemo">
-                        Your browser does not support canvas.
-                    </canvas>
-                </div>
             </article>
             <article>
                 <h2>I Miss My DJ - Interactive Music Experience</h2>
@@ -42,30 +50,31 @@
                     <li>Collaborated with a team of women engineers to design and implement the user interface</li>
                     <li>Integrated with music streaming services to access and manipulate audio content</li>
                 </ul>
-                <div class="project-demo">
-                    <canvas id="djDemo">
-                        Your browser does not support canvas.
-                    </canvas>
-                </div>
             </article>
             <article>
                 <h2>Other Projects</h2>
                 <ol>
                     <li>
-                        <dfn>Brain-Computer Interface (BCI) Dino Game</dfn>
+                        <h3>Brain-Computer Interface (BCI) Dino Game</h3>
                         <p>One of my most exciting projects involved integrating brain-computer interface (BCI) technology with the classic Google Chrome Dinosaur Game. Using the Muse Headband API, which records real-time EEG (electroencephalography) signals, I developed a system where a player could control the game by simply blinking. This project required extensive signal processing, as I had to filter and interpret EEG data to detect blinks and translate them into game inputs.
 
                             I implemented a JavaScript-based interface to interact with the Muse API, allowing real-time response to brain activity. This project placed second in a district STEM competition, where I presented my findings to a panel of judges. Additionally, I wrote an article on the project detailing the methodology and results, <a href="https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267" target="_blank">available here</a>.</p>
-                        
+                    </li>
+                    <li>
+                        <h3>Routine Tracker Mobile Application - CSE 110 Team Project</h3>
+                        <p>Currently developing a native Android application focused on routine and task management as part of 
+                        <dfn>Software Engineering</dfn> coursework. Working with a six-person development team, we're employing 
+                        <dfn>AGILE</dfn> methodologies and <dfn>SCRUM</dfn> practices to create an application that helps users 
+                        build and maintain productive daily routines through intuitive task tracking and habit formation features.</p>
                     </li>
                 </ol>
             </article>
         </section>
     </main>
 
+    <page-section-divider></page-section-divider>
     <footer>
-        <address>Contact Information</address>
-        <p>Copyright © 2024</p>
+        <p>Made with ❤️ by Nora Zajzon</p>
     </footer>
 </body>
 </html> 

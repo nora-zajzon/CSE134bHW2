@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Nora Zajzon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    // will eventually add button scripting to show and hide classes
+</script>
 <body>
     <header>
         <nav>
@@ -14,6 +18,7 @@
                 <li><a href="research.html">Research</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiemental.html">Experimental</a></li>
             </ul>
         </nav>
     </header>
@@ -49,8 +54,10 @@ function aboutMe() {
     const skills = ['Python', 'JavaScript', 'React'];
     const passion = 'Building meaningful applications';
     return `I love ${passion} using ${skills.join(', ')}`;
-}
+                }
             </code></pre>
+            <button id="show-classes" aria-expanded="false">View My Coursework</button>
+            <div id="classes-content"></div>
 
             <h2>My Furry Friends</h2>
             <p>Meet my adorable dogs, Chippy and Cherry!</p>
@@ -100,11 +107,27 @@ function aboutMe() {
                     <img src="" alt="Hobby image">
                 </div>
             </template>
+
+            <template id="classes-template">
+                <div class="classes-container">
+                    <h3>Coursework</h3>
+                    <ul class="classes-list">
+                        <li>CSE 134B - Web Client Languages</li>
+                        <li>CSE 110 - Software Engineering</li>
+                        <li>CSE 101 - Design and Analysis of Algorithms</li>
+                        <li>CSE 110 - Software Engineering</li>
+                        <li>CSE 100 - Advanced Data Structures</li>
+                        <li>COGS 108 - Data Science in Practice</li>
+                        <li>MATH 183 - Statistical Methods</li>
+                    </ul>
+                </div>
+            </template>
         </section>
     </main>
 
+    <page-section-divider></page-section-divider>
     <footer>
-        <p>Copyright © 2024</p>
+        <p>Made with ❤️ by Nora Zajzon</p>
     </footer>
 </body>
 </html> 
